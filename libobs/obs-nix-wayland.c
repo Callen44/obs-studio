@@ -1012,6 +1012,19 @@ static obs_key_t obs_nix_wayland_key_from_virtual_key(int sym)
 	case XKB_KEY_KP_Enter:
 		return OBS_KEY_ENTER;
 
+	case XKB_KEY_KP_Home:
+		return OBS_KEY_HOME;
+	case XKB_KEY_KP_End:
+		return OBS_KEY_END;
+	case XKB_KEY_KP_Page_Up:
+		return OBS_KEY_PAGEUP;
+	case XKB_KEY_KP_Page_Down:
+		return OBS_KEY_PAGEDOWN;
+	case XKB_KEY_KP_Insert:
+		return OBS_KEY_INSERT;
+	case XKB_KEY_KP_Delete:
+		return OBS_KEY_DELETE;
+
 	case XKB_KEY_KP_0:
 		return OBS_KEY_NUM0;
 	case XKB_KEY_KP_1:
